@@ -10,19 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_10_174601) do
-
+ActiveRecord::Schema.define(version: 20_220_110_174_601) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "yachts", force: :cascade do |t|
-    t.integer "price_per_hour"
-    t.string "description"
-    t.integer "max_time"
-    t.integer "insurence"
-    t.integer "extra_person_fee"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table 'yachts', force: :cascade do |t|
+    t.integer 'price_per_hour'
+    t.string 'description'
+    t.integer 'max_time'
+    t.integer 'insurence'
+    t.integer 'extra_person_fee'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
-
 end
