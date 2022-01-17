@@ -12,7 +12,6 @@ Yacht.create(
       description: 'This yacht is amazing!',
       max_time: 3,
       insurence: 400,
-      extra_person_fee: 500,
-    }
+      extra_person_fee: 500 }
   ]
 )
