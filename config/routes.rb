@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   namespace :api do
-    namespace :v1 do
-      resources :yachts
-      post '/yacht', to: 'yachts#show'
+    namespace :v1, defaults: { format: :json } do
+      resources :yachts, only: %i[index put patch create show delete] do
+        get :picture, on: :member
+      end
     end
   end
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
