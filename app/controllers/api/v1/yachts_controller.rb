@@ -43,8 +43,9 @@ class Api::V1::YachtsController < ApplicationController
   private
 
   def create_params
-    params.require(:yacht).permit(:name, :price_per_hour, :description, :max_time, :insurance, :extra_person_fee,
-                                  :picture)
+    params.permit(
+      :name, :price_per_hour, :description, :max_time, :insurance, :extra_person_fee, :picture
+    )
   end
 
   def success_json(yacht)
