@@ -3,10 +3,6 @@ class Api::V1::YachtsController < ApplicationController
   def index
     yachts = Yacht.all.map { |e| e.attributes.merge(picture: rails_blob_path(e.picture)) }
     render json: { data: yachts }, status: 200
-
-    # data = { yachts: Yacht.all.as_json, pictures: rails_blob_path }
-
-    # render json: Yacht.all, only: %i[price_per_hour name description max_time insurence extra_person_fee]
   end
 
   def create
