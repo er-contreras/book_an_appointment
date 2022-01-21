@@ -10,9 +10,6 @@
 - Language: Ruby 
 - Frameworks: Ruby on Rails
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
 
 ## Kanban Board
 
@@ -28,14 +25,23 @@
 ### Setup
 
 ```
-git clone https://github.com/eri8-9/book_an_appointment_frontend.git
+git clone https://github.com/eri8-9/book_an_appointment.git
 ```
 
 ### Install
 
 ```
+bundle install
 npm install
+rails db:setup
 ```
+
+### Run the server
+
+```
+rails server
+```
+
 
 ## Authors
 
