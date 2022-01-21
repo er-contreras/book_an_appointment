@@ -24,7 +24,8 @@ class Api::V1::YachtsController < ApplicationController
     item = Yacht.find_by(name: params[:id])
 
     if item.present?
-      # Does NOT use decorator.  I just merge here the picture so it shows up in the same json object for better accesibility.
+      # Does NOT use decorator.  I just merge here the picture so it shows up in
+      # the same json object for better accesibility.
       yacht = item.attributes.merge(picture: rails_blob_path(item.picture))
 
       render json: { yacht: yacht }, status: 200

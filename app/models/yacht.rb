@@ -3,8 +3,8 @@ class Yacht < ApplicationRecord
 
   validates :name, presence: true, uniqueness: true
 
-  # validates :price_per_hour, presence: true
-  # validates :description, presence: true
-  # validates :insurance, presence: true
-  # validates :extra_person_fee, presence: true
+  validates :price_per_hour, presence: true, numericality: true
+  validates :description, presence: true
+  validates :insurance, presence: true, numericality: true
+  validates :extra_person_fee, presence: true, numericality: true
 end
