@@ -30,6 +30,16 @@ class Api::V1::YachtsController < ApplicationController
     end
   end
 
+  def update
+    item = Yacht.find_by(name: params[:id])
+    if item.present?
+      item.update(reserved: !item.reserved?)
+      render json: { reserved: item.reserved? }, status: 200
+    else
+      head :not_found
+    end
+  end
+
   def getpicture
     yacht = Yacht.find_by(name: params[:id])
 
