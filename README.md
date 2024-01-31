@@ -13,7 +13,7 @@
 
 ## Kanban Board
 
-[Link to Kanban](https://github.com/eri8-9/book_an_appointment/projects/2)
+[Link to Kanban](https://github.com/er-contreras/book_an_appointment/projects/2)
 
 ### Screenshot of the initial state of the Kanban Board
 ![Screen Shot 2022-01-05 at 17 20 36](https://user-images.githubusercontent.com/67211919/148303693-85d245d5-9833-47c3-8e26-89ca74d95b4d.png)
@@ -47,9 +47,9 @@ rails server
 
 👤 **Christian Erick Contreras**
 
-- GitHub: [@eri8-9](https://github.com/eri8-9)
-- Linkedin: [LinkedIn](https://www.linkedin.com/in/christian-erick/)
-- Twitter: [@ChristianErick_](https://twitter.com/ChristianErick_)
+- GitHub: [@er-contreras](https://github.com/er-contreras)
+- Linkedin: [LinkedIn](https://www.linkedin.com/in/er-contreras/)
+- Twitter: [@er_contreras_](https://twitter.com/er_contreras_)
 
 👤 **Miguel Tapia**
 
@@ -62,7 +62,7 @@ rails server
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/eri8-9/book_an_appointment/issues).
+Feel free to check the [issues page](https://github.com/er-contreras/book_an_appointment/issues).
 
 ## Show your support
 
